@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D3EB48A-C4AB-41F2-97F8-FBB06B0DA610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Start</RootNamespace>
+    <AssemblyName>Start</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\pcd\Downloads\Guna.UI\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\pcd\Downloads\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addEx.designer.cs">
+      <DependentUpon>addEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="binding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="binding.designer.cs">
+      <DependentUpon>binding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlackPoint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc.Designer.cs">
+      <DependentUpon>Calc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcGame.Designer.cs">
+      <DependentUpon>CalcGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choixMultiple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="choixMultiple.designer.cs">
+      <DependentUpon>choixMultiple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CroisDecroiCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CroisDecroiCours.Designer.cs">
+      <DependentUpon>CroisDecroiCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComparaisonGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComparaisonGame.Designer.cs">
+      <DependentUpon>ComparaisonGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComplemCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComplemCours.Designer.cs">
+      <DependentUpon>ComplemCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cours.designer.cs">
+      <DependentUpon>Cours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coursConj2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coursConj2.Designer.cs">
+      <DependentUpon>coursConj2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CryptageEtHachage.cs" />
+    <Compile Include="DateTimeGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateTimeGame.designer.cs">
+      <DependentUpon>DateTimeGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anatomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anatomy.designer.cs">
+      <DependentUpon>Anatomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateTimeCours.Designer.cs">
+      <DependentUpon>DateTimeCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictation.designer.cs">
+      <DependentUpon>Dictation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dictee1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dictee1.designer.cs">
+      <DependentUpon>dictee1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EcrCours0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EcrCours0.designer.cs">
+      <DependentUpon>EcrCours0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ecriture0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecriture0.designer.cs">
+      <DependentUpon>Ecriture0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExPro.designer.cs">
+      <DependentUpon>ExPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exSupp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exSupp.designer.cs">
+      <DependentUpon>exSupp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlappyGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlappyGame.designer.cs">
+      <DependentUpon>FlappyGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CroisDecroiGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CroisDecroiGame.designer.cs">
+      <DependentUpon>CroisDecroiGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colirage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colirage.designer.cs">
+      <DependentUpon>Colirage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coloriage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coloriage2.designer.cs">
+      <DependentUpon>Coloriage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="livingGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="livingGame.designer.cs">
+      <DependentUpon>livingGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoitieGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoitieGame.designer.cs">
+      <DependentUpon>MoitieGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intro_video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intro_video.designer.cs">
+      <DependentUpon>intro_video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formesGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formesGame.designer.cs">
+      <DependentUpon>formesGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fractionCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fractionCours.Designer.cs">
+      <DependentUpon>fractionCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComplemGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComplemGame.designer.cs">
+      <DependentUpon>ComplemGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gram.designer.cs">
+      <DependentUpon>Gram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JeuxStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JeuxStart.Designer.cs">
+      <DependentUpon>JeuxStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message.designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoitieCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoitieCours.Designer.cs">
+      <DependentUpon>MoitieCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormesCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormesCours.Designer.cs">
+      <DependentUpon>FormesCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fractionGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fractionGame.Designer.cs">
+      <DependentUpon>fractionGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatiereStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatiereStart.Designer.cs">
+      <DependentUpon>MatiereStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiDivCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiDivCours.Designer.cs">
+      <DependentUpon>MultiDivCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiDivGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiDivGame.designer.cs">
+      <DependentUpon>MultiDivGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niveau_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveau_2.designer.cs">
+      <DependentUpon>Niveau_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumbersCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumbersCours.Designer.cs">
+      <DependentUpon>NumbersCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumbersGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumbersGame.Designer.cs">
+      <DependentUpon>NumbersGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumbersUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumbersUserControl.designer.cs">
+      <DependentUpon>NumbersUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homlvl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homlvl2.designer.cs">
+      <DependentUpon>homlvl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orthographe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orthographe.designer.cs">
+      <DependentUpon>Orthographe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermCours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermCours.designer.cs">
+      <DependentUpon>PermCours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="phraseoEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="phraseoEx.designer.cs">
+      <DependentUpon>phraseoEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planetes.designer.cs">
+      <DependentUpon>Planetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrioritéGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrioritéGame.Designer.cs">
+      <DependentUpon>PrioritéGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Prononciation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prononciation.designer.cs">
+      <DependentUpon>Prononciation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionLocation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResuméNb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResuméNb.Designer.cs">
+      <DependentUpon>ResuméNb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundButton0.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScienceStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScienceStart.Designer.cs">
+      <DependentUpon>ScienceStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuitesNbGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuitesNbGame.Designer.cs">
+      <DependentUpon>SuitesNbGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SujetEt verbe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SujetEt verbe.designer.cs">
+      <DependentUpon>SujetEt verbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicTacToe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicTacToe.designer.cs">
+      <DependentUpon>TicTacToe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotaleMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotaleMessage.designer.cs">
+      <DependentUpon>TotaleMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variables.cs" />
+    <Compile Include="Verbes0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verbes0.designer.cs">
+      <DependentUpon>Verbes0.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addEx.resx">
+      <DependentUpon>addEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="binding.resx">
+      <DependentUpon>binding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc.resx">
+      <DependentUpon>Calc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcGame.resx">
+      <DependentUpon>CalcGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choixMultiple.resx">
+      <DependentUpon>choixMultiple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CroisDecroiCours.resx">
+      <DependentUpon>CroisDecroiCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComparaisonGame.resx">
+      <DependentUpon>ComparaisonGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComplemCours.resx">
+      <DependentUpon>ComplemCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cours.resx">
+      <DependentUpon>Cours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coursConj2.resx">
+      <DependentUpon>coursConj2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateTimeGame.resx">
+      <DependentUpon>DateTimeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anatomy.resx">
+      <DependentUpon>Anatomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateTimeCours.resx">
+      <DependentUpon>DateTimeCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictation.resx">
+      <DependentUpon>Dictation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictee1.resx">
+      <DependentUpon>dictee1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EcrCours0.resx">
+      <DependentUpon>EcrCours0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecriture0.resx">
+      <DependentUpon>Ecriture0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExPro.resx">
+      <DependentUpon>ExPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exSupp.resx">
+      <DependentUpon>exSupp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlappyGame.resx">
+      <DependentUpon>FlappyGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CroisDecroiGame.resx">
+      <DependentUpon>CroisDecroiGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colirage.resx">
+      <DependentUpon>Colirage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coloriage2.resx">
+      <DependentUpon>Coloriage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="livingGame.resx">
+      <DependentUpon>livingGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoitieGame.resx">
+      <DependentUpon>MoitieGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intro_video.resx">
+      <DependentUpon>intro_video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formesGame.resx">
+      <DependentUpon>formesGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fractionCours.resx">
+      <DependentUpon>fractionCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComplemGame.resx">
+      <DependentUpon>ComplemGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gram.resx">
+      <DependentUpon>Gram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JeuxStart.resx">
+      <DependentUpon>JeuxStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoitieCours.resx">
+      <DependentUpon>MoitieCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormesCours.resx">
+      <DependentUpon>FormesCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fractionGame.resx">
+      <DependentUpon>fractionGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatiereStart.resx">
+      <DependentUpon>MatiereStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiDivCours.resx">
+      <DependentUpon>MultiDivCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiDivGame.resx">
+      <DependentUpon>MultiDivGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niveau_2.resx">
+      <DependentUpon>Niveau_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumbersCours.resx">
+      <DependentUpon>NumbersCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumbersGame.resx">
+      <DependentUpon>NumbersGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumbersUserControl.resx">
+      <DependentUpon>NumbersUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homlvl2.resx">
+      <DependentUpon>homlvl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orthographe.resx">
+      <DependentUpon>Orthographe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermCours.resx">
+      <DependentUpon>PermCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phraseoEx.resx">
+      <DependentUpon>phraseoEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planetes.resx">
+      <DependentUpon>Planetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrioritéGame.resx">
+      <DependentUpon>PrioritéGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prononciation.resx">
+      <DependentUpon>Prononciation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResuméNb.resx">
+      <DependentUpon>ResuméNb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScienceStart.resx">
+      <DependentUpon>ScienceStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuitesNbGame.resx">
+      <DependentUpon>SuitesNbGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SujetEt verbe.resx">
+      <DependentUpon>SujetEt verbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicTacToe.resx">
+      <DependentUpon>TicTacToe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotaleMessage.resx">
+      <DependentUpon>TotaleMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verbes0.resx">
+      <DependentUpon>Verbes0.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pics\exit_sign_480px.png" />
+    <None Include="bin\Debug\Pics\left_500px.png" />
+    <None Include="bin\Debug\Pics\icons8-end-button-100.png" />
+    <None Include="bin\Debug\Pics\icons8-home-button-100.png" />
+    <None Include="bin\Debug\Pics\Image20210220092104.jpg" />
+    <None Include="bin\Debug\Pics\LifeOn.png" />
+    <None Include="bin\Debug\Pics\lock_500px.png" />
+    <None Include="Resources\Card1.png" />
+    <None Include="Resources\Card2.png" />
+    <None Include="Resources\Card3.png" />
+    <None Include="Resources\Card4.png" />
+    <None Include="Resources\Card5.png" />
+    <None Include="Resources\Card6.png" />
+    <None Include="Resources\Card7.png" />
+    <None Include="Resources\Card8.png" />
+    <None Include="Resources\Card9.png" />
+    <None Include="Resources\Card10.png" />
+    <None Include="Resources\Cover.png" />
+    <None Include="Resources\forest.jpg" />
+    <None Include="bin\Debug\Pics\assignment.png" />
+    <None Include="bin\Debug\Pics\newASsignment.png" />
+    <None Include="Resources\crown3.png" />
+    <None Include="Resources\crown2.png" />
+    <None Include="Resources\crown1.png" />
+    <None Include="bin\Debug\Pics\Msg.png" />
+    <None Include="bin\Debug\Pics\newMsg.png" />
+    <None Include="bin\Debug\Pics\back_to_500px.png" />
+    <None Include="bin\Debug\Pics\next_page_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
