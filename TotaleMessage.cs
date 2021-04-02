@@ -43,6 +43,13 @@ namespace Start
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Variables.m.Show();
+            Variables.m.ShowInTaskbar = true;
+        }
+
         public static void ShowTotaleMessage(string s, out Queue q1, out Queue q2, out Queue a1, out Queue a2)//message
         {
             q1 = new Queue(); q2 = new Queue(); a1 = new Queue(); a2 = new Queue(); string z;
@@ -79,10 +86,7 @@ namespace Start
         }
         private void button1_Click(object sender, EventArgs e)//retourne
         {
-          Variables .m.Close();
-          this.Close();
-            Variables.intro.Show();
-            Variables.intro.ShowInTaskbar = true;
+        
         }
     }
 }

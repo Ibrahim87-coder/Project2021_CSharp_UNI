@@ -19,7 +19,8 @@ namespace Start
         {
             InitializeComponent();
             conjugaison = new XmlDocument();
-            conjugaison.Load(Application.StartupPath + @"\conjugaison.xml"); CryptageEtHachage.DeCrypNode(conjugaison .DocumentElement);
+            conjugaison.Load(Application.StartupPath + @"\conjugaison.xml");
+            CryptageEtHachage.DeCrypNode(conjugaison .DocumentElement);
         }
         Random r = new Random ();string vrai11, vrai12, vrai13, vrai21, vrai22; int a = 1;
 

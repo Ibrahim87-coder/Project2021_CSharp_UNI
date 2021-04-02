@@ -232,7 +232,6 @@
             this.Name = "NumbersGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "jeux des nombres";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.NumbersGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nb1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nb2)).EndInit();

@@ -18,7 +18,8 @@ namespace Start
         binding binding2 = new binding();
         XmlDocument gram;
      
-        public bool cours, gram2=false;public static  int[] scores = new int[10];
+        public bool cours, gram2=false;
+        public static int[] scores = new int[10];
         public cours_de_grammaire()
         {
             InitializeComponent();
@@ -27,8 +28,19 @@ namespace Start
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            gram = new XmlDocument(); dr = Variables.XmlReader(Application.StartupPath + "\\users.xml");
-            gram.Load(Application.StartupPath + @"\Gramm.xml");if (gram2) panel2.Visible = true; if (!cours) {  button11.Click += lvl1_grams; button3.Click += lvl1_grams; button4.Click += lvl1_grams; button7.Click += lvl1_grams; button6.Click += lvl1_grams; button9.Click += lvl1_grams; }
+            gram = new XmlDocument(); 
+            dr = Variables.XmlReader(Application.StartupPath + "\\users.xml");
+            gram.Load(Application.StartupPath + @"\Gramm.xml");
+            if (gram2) panel2.Visible = true;
+            if (!cours) 
+            {  
+                button11.Click += lvl1_grams
+                    ; button3.Click += lvl1_grams; 
+                button4.Click += lvl1_grams; 
+                button7.Click += lvl1_grams; 
+                button6.Click += lvl1_grams; 
+                button9.Click += lvl1_grams;
+            }
             CryptageEtHachage.DeCrypNode(gram.DocumentElement);
         }
         
@@ -37,10 +49,7 @@ namespace Start
 
         }
 
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    button3.Visible =button4.Visible = button5.Visible = true;button2.Visible = false;
-        //}
+       
         private void button3_Click(object sender, EventArgs e)
         {
             
@@ -49,7 +58,7 @@ namespace Start
             else
             {
                 Cours cf = new Cours();
-                // this.Close(); cf.imageConv = pronomspersonnles; cf.Show();
+                
                 cf.debut = 31;cf.fin = 33;cf.Show();
         }
             
@@ -60,21 +69,14 @@ namespace Start
             else
             {
                 Cours cf = new Cours();
-                // this.Close(); cf.imageConv = pronomspersonnles; cf.Show();
+
                 cf.debut = 27; cf.fin = 29; cf.Show();
 
-                //   cf.imageConv = singulier; cf.Show();
             }
-            //button3.Visible = false; button4.Visible = false; button5.Visible = false; binding2.rand = ComMethodes.Generate(10, 16); binding2.dest = 2;
-            //binding2.depart = 6;binding2.lecon = "SinPlu"; binding2.Location = new Point(200, 150); this.Controls.Add(binding2);
+           
         }
 
-        //private void button5_Click(object sender, EventArgs e)
-        //{
-        //    button5.Click += lvl1_grams;
-        //    button3.Visible = false; button4.Visible = false; button5.Visible = false; binding2.rand = ComMethodes.Generate(6, 10); binding2.dest = 6;
-        //    binding2.depart = 6; binding2.lecon = "Adjectifs"; binding2.Location = new Point(200, 150); this.Controls.Add(binding2);
-        //}
+    
 
         private void button7_Click(object sender, EventArgs e)
         {
@@ -82,13 +84,11 @@ namespace Start
             else
             {
                 Cours cf = new Cours();
-                // this.Close(); cf.imageConv = pronomspersonnles; cf.Show();
+                
                 cf.debut = 17; cf.fin = 19; cf.Show();
 
-                //   cf.imageConv = nompropre; cf.Show();
             }
-            //phraseoEx ep = new phraseoEx();this.Controls.Add(ep);ep.Dock = DockStyle.Fill;
-            //ep.Show();ep.BringToFront();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace Start
                 Cours cf = new Cours();
                 cf.debut = 15; cf.fin = 17; cf.Show();
 
-                //  cf.imageConv = femiMas; cf.Show();
+                
             }
         }
 
@@ -111,29 +111,29 @@ namespace Start
         private void button8_Click(object sender, EventArgs e)
         {
 
-            //button8.Click += lvl1_grams;
+            
         }
-
         private void button9_Click(object sender, EventArgs e)
         {
             panconv = panel1;if(!cours) pictureBox1.Visible = true;
             else
             {
-                //   this.Close(); cf.imageConv = types; cf.Show();
+               
                 Cours cf = new Cours();cf.conjugaison = false;
                 cf.debut = 22; cf.fin = 27; cf.Show();
             }
         }
-
         private void lvl1_grams(object sender, EventArgs e)
         {
-           Button  lb = (Button )sender;binding2.Dispose(); binding2 = new binding(); userconv = binding2;
+            Button lb = (Button)sender; binding2.Dispose();
 
-            panel1.Hide();panel2.Visible = false;
-                int a = int.Parse(lb.Tag.ToString().Split(',')[0]), b = int.Parse(lb.Tag.ToString().Split(',')[1]);
-                binding2.rand = ComMethodes.Generate(a, b); binding2.dest = int.Parse(lb.Tag.ToString().Split(',')[3]);
-                binding2.depart = int.Parse(lb.Tag.ToString().Split(',')[2]); binding2.lecon = lb.Tag.ToString().Split(',')[5]; binding2.Location = new Point(200, 150);binding2.panl = panconv; this.Controls.Add(binding2);
-           userconv.Visible = true;
+            panel1.Hide(); panel2.Visible = false;
+            int a = int.Parse(lb.Tag.ToString().Split(',')[0]), b = int.Parse(lb.Tag.ToString().Split(',')[1]);
+            binding2 = new binding(lb.Tag.ToString().Split(',')[5], int.Parse(lb.Tag.ToString().Split(',')[3]), int.Parse(lb.Tag.ToString().Split(',')[2]), panconv, ComMethodes.Generate(a, b)); userconv = binding2;
+            //binding2.rand = ComMethodes.Generate(a, b); binding2.dest = int.Parse(lb.Tag.ToString().Split(',')[3]);
+            //binding2.depart = int.Parse(lb.Tag.ToString().Split(',')[2]); binding2.lecon = lb.Tag.ToString().Split(',')[5]; binding2.Location = new Point(200, 150);binding2.panl = panconv;
+            binding2.Location = new Point(200, 150); this.Controls.Add(binding2);
+            userconv.Visible = true;
         }
         private void button13_Click(object sender, EventArgs e)
         {
@@ -147,8 +147,6 @@ namespace Start
             {
                 Cours cf = new Cours(); cf.conjugaison = false;
                 cf.debut = 20; cf.fin = 22; cf.Show();
-
-                // this.Close(); cf.imageConv = sujetVerbe; cf.Show();
             }
         }
         Panel panconv;
@@ -164,7 +162,6 @@ namespace Start
             }
             else
             {
-                // this.Close(); cf.imageConv = phrase; cf.Show();
                 Cours cf = new Cours(); cf.conjugaison = false;
                 cf.debut = 1;cf.fin = 5;cf.Show();
             }
@@ -176,10 +173,8 @@ namespace Start
             panconv = panel2;if(!cours) pictureBox1.Visible = true;
             else
             {
-                //  this.Close(); cf.imageConv = demonstratifs; cf.Show();
                 Cours cf = new Cours();cf.conjugaison = false;
                 cf.debut = 5; cf.fin = 7;cf.Show();
-
             }
         }
 
@@ -191,35 +186,59 @@ namespace Start
         private void button15_Click(object sender, EventArgs e)
         {
             panconv = panel2; 
-            panel1.Hide(); panel2.Hide();if (!cours)
+            panel1.Hide();
+            panel2.Hide();
+            if (!cours)
             {
-                pictureBox1.Visible = true; choixMultiple.len = 6; choixMultiple.max = 10; choixMultiple choiprn = new choixMultiple();choiprn.pan = panconv; userconv = choiprn; userconv.Visible = true; choiprn.rands = ComMethodes.Generate(6, 10); choiprn.lecon = "Posses"; choiprn.Show(); choiprn.BringToFront();
+                pictureBox1.Visible = true; 
+                choixMultiple choiprn = new choixMultiple(ComMethodes.Generate(6, 10), "Posses", panconv, 6, 10, "Francais");
+               
 
-                this.Controls.Add(choiprn); choiprn.Dock = DockStyle.Fill; pictureBox1.BringToFront();
+                userconv = choiprn;
+                userconv.Visible = true;
+                choiprn.Show();
+                choiprn.BringToFront();
+                this.Controls.Add(choiprn);
+                choiprn.Dock = DockStyle.Fill;
+                pictureBox1.BringToFront();
             }
             else
             {
-                Cours cf = new Cours(); cf.conjugaison = false;
-                cf.debut = 29; cf.fin = 31; cf.Show();
+                Cours cf = new Cours();
+                cf.conjugaison = false;
+                cf.debut = 29;
+                cf.fin = 31;
+                cf.Show();
 
-                //    this.Close(); cf.imageConv = possessifs; cf.Show();
             }
         }
        UserControl  userconv;
         private void button14_Click(object sender, EventArgs e)
-        {    //  gram = new XmlDocument();
-             // gram.Load(Application.StartupPath + @"\ExempleDeXml.xml");
-            panconv = panel1; 
-            if (!cours) {
-                panel1.Hide(); panel2.Hide(); choixMultiple.len = 7; choixMultiple.max = 10; choixMultiple choiADj = new choixMultiple(); userconv = choiADj;choiADj.pan = panconv; userconv.Visible = true; choiADj.rands = ComMethodes.Generate(7, 10); choiADj.lecon = "Adjectifs"; choiADj.Show(); choiADj.BringToFront();
-                this.Controls.Add(choiADj); choiADj.Dock = DockStyle.Fill;
-                pictureBox1.Visible = true; pictureBox1.BringToFront();
+        {
+            panconv = panel1;
+            panel1.Hide();
+            panel2.Hide();
+            if (!cours) 
+            {
+               
+                choixMultiple choiADj = new choixMultiple(ComMethodes.Generate(7, 10), "Adjectifs", panconv, 7, 10, "Francais");
+                
+                userconv = choiADj;
+                userconv.Visible = true;
+                choiADj.Show();
+                choiADj.BringToFront();
+                this.Controls.Add(choiADj); 
+                choiADj.Dock = DockStyle.Fill;
+                pictureBox1.BringToFront();
             }
             else
             {
-                //     cf.imageConv = adjQualificatifs; cf.Show();
-                Cours cf = new Cours();cf.conjugaison = false;
-                cf.debut = 7; cf.fin = 15; cf.Show();
+                
+                Cours cf = new Cours();
+                cf.conjugaison = false;
+                cf.debut = 7;
+                cf.fin = 15;
+                cf.Show();
 
             }
         }
@@ -261,7 +280,10 @@ namespace Start
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {panconv.Visible = true;userconv.Hide();  this.BackgroundImage = b;
+        {
+            panconv.Visible = true;
+            userconv.Hide(); 
+            this.BackgroundImage = b;
             pictureBox1.Visible = false;
         }
 

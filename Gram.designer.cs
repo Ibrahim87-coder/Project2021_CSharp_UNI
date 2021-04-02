@@ -176,7 +176,7 @@ namespace Start
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button11);
             this.panel2.Controls.Add(this.button15);
-            this.panel2.Location = new System.Drawing.Point(88, 108);
+            this.panel2.Location = new System.Drawing.Point(492, 59);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1196, 457);
             this.panel2.TabIndex = 9;
@@ -289,7 +289,6 @@ namespace Start
             this.Name = "cours_de_grammaire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cours_de_grammaire";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.VisibleChanged += new System.EventHandler(this.panel2_VisibleChanged);
             this.panel1.ResumeLayout(false);

@@ -26,7 +26,8 @@ namespace Start
             usernameMaths.Text = Variables.intro.username.Text;
             if (Variables.MatiereNomPublic == "MT")
             {
-                lvlFrancais.Visible = false;lvlMaths.Visible = true;
+                lvlFrancais.Visible = false;
+                lvlMaths.Visible = true;
                 PanelMaths.Visible = true;
                 PanelFrancais.Visible = false;
 
@@ -38,7 +39,9 @@ namespace Start
             else if (Variables.MatiereNomPublic == "FR")
             {
                 PanelFrancais.Visible = true;
-                PanelMaths.Visible = false; lvlFrancais.Visible = true; lvlMaths.Visible =false;
+                PanelMaths.Visible = false; 
+                lvlFrancais.Visible = true; 
+                lvlMaths.Visible =false;
 
                 // this.Invoke(new MethodInvoker(() => PanelFrancais .Show ()));
                 toolTip1.SetToolTip(Picfr1, "Prononciation");
@@ -452,6 +455,7 @@ namespace Start
             else if (Variables.counter == 1)
             {
                 //cours orthog
+                
             }
             else if (Variables.counter == 2)
             {

@@ -27,17 +27,28 @@ namespace Start
         private void label8_Click(object sender, EventArgs e)
         {
             pictureBox1.Visible = true;
-            panel2.Visible = true;panel2.BringToFront();
+            panel2.Visible = true;
+            panel2.BringToFront();
             for (int i = 0; i < 10; i++)
             {
-                lblarr[i] = new RoundButton(); lblarr[i].Size = new Size(30, 30);
-                lblarr[i].Location = new Point(13 + i * 30, 11); panel1.Controls.Add(lblarr[i]);
+                lblarr[i] = new RoundButton();
+                lblarr[i].Size = new Size(30, 30);
+                lblarr[i].Location = new Point(13 + i * 30, 11);
+                panel1.Controls.Add(lblarr[i]);
 
             }
             panel1.Visible = true;
-            label4.Text = reponsess[i]; trurp = truerep[i]; label1.Text = lbl1[j]; label2.Text = lbl2[j]; label3.Text = lbl3[i];
-            label1.Visible = true; label4.Visible = true; label3.Visible = true;
-            panel3.Visible = false;panel4.Visible = true;panel4.BringToFront();
+            label4.Text = reponsess[i];
+            trurp = truerep[i]; 
+            label1.Text = lbl1[j];
+            label2.Text = lbl2[j]; 
+            label3.Text = lbl3[i];
+            label1.Visible = true;
+            label4.Visible = true; 
+            label3.Visible = true;
+            panel3.Visible = false;
+            panel4.Visible = true;
+            panel4.BringToFront();
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -48,7 +59,8 @@ namespace Start
         }
 
 
-        Random r = new Random(); int i = 0, j = 0, scoree = 0, tickks = 0; public choixMultiple choiADj = new choixMultiple();
+        Random r = new Random(); int i = 0, j = 0, scoree = 0, tickks = 0;
+        public choixMultiple choiADj = new choixMultiple();
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -62,21 +74,32 @@ namespace Start
         private void button3_Click(object sender, EventArgs e)
         {
             button2.Visible = button3.Visible = false;
-            choixMultiple.len = 5; choixMultiple.max = 10; choiADj = new choixMultiple(); choiADj.rands = ComMethodes.Generate(5, 10); choiADj.lecon = "gugge"; choiADj.Show(); choiADj.BringToFront();
-            choiADj.pan = panel3;
+            //choixMultiple.len = 5;
+            //choixMultiple.max = 10; 
+            //choiADj = new choixMultiple(); 
+            //choiADj.rands = ComMethodes.Generate(5, 10); 
+            //choiADj.lecon = ;
+          
+
+            choixMultiple choiADj = new choixMultiple(ComMethodes.Generate(5, 10), "gugge", panel3, 5, 10, "Francais");
+            //choiADj.pan = panel3;
+            choiADj.Show();
+            choiADj.BringToFront();
             this.Controls.Add(choiADj); choiADj.Dock = DockStyle.Fill;
 
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-            cours_Orthographe ortho = new cours_Orthographe(); this.Hide();
+            cours_Orthographe ortho = new cours_Orthographe();
+            this.Hide();
             ortho.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panel4.Visible = true; panel4.BringToFront();
+            panel4.Visible = true;
+            panel4.BringToFront();
             pictureBox1.Visible = true;
             button2.Visible = button3.Visible = true;
         }
@@ -115,9 +138,20 @@ namespace Start
         private void button2_Click(object sender, EventArgs e)
         {
             button2.Visible = button3.Visible = false;
-            choixMultiple.len = 5; choixMultiple.max = 10; choiADj = new choixMultiple(); choiADj.rands = ComMethodes.Generate(5, 10); choiADj.lecon = "erEEEz"; choiADj.Show(); choiADj.BringToFront();
-            choiADj.pan = panel3;
-            this.Controls.Add(choiADj); choiADj.Dock = DockStyle.Fill;
+            //choixMultiple.len = 5; 
+            //choixMultiple.max = 10; 
+            //choiADj = new choixMultiple();
+            //choiADj.rands = ComMethodes.Generate(5, 10);
+            //choiADj.lecon = "erEEEz";
+            //choiADj.Show();
+            //choiADj.BringToFront();
+            //choiADj.pan = panel3;
+            choixMultiple choiADj = new choixMultiple(ComMethodes.Generate(5, 10), "erEEEz", panel3, 5, 10, "Francais");
+           
+            choiADj.Show();
+            choiADj.BringToFront();
+            this.Controls.Add(choiADj);
+            choiADj.Dock = DockStyle.Fill;
         }
 
         private void ortho_Load(object sender, EventArgs e)

@@ -17,7 +17,6 @@ namespace Start
     public partial class Page_entrée : Form
     {
 
-        SoundPlayer mouseClickButton = new SoundPlayer(Application.StartupPath+"\\media\\Click_Button.wav");
         public Page_entrée()
         {
             InitializeComponent();
@@ -35,16 +34,12 @@ namespace Start
 
             // this code for make textbox icons background transparent
         }
-
-        
-       
-
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
             string txt = UserTxt.Text;
             if (txt.Equals("Votre nom d'utilisateur"))
             {
-                UserTxt.Text = "";
+                UserTxt.Text = string.Empty;
             }
         }
         private void textBox2_MouseClick(object sender, MouseEventArgs e)
@@ -52,8 +47,8 @@ namespace Start
             wrongData.Visible = false;
             motcle.Visible = false;
             motclefaux.Visible = false;
-            string pass = PassTxt.Text;
-            if (pass.Equals("Votre mot clé"))
+           
+            if (PassTxt.Text.Equals("Votre mot clé"))
             {
                 PassTxt.Text = "";
             }
@@ -69,7 +64,7 @@ namespace Start
            
             dt = ds.Tables["Users"];  
         }
-        public static string nom="";
+        public static string nom=string.Empty;
         DataRow[] dr;
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -142,7 +137,7 @@ namespace Start
                     this.ShowInTaskbar = false;
 
                     Variables.exSup = dr[0]["exSupp"].ToString().Split(',');
-                    Variables.intro.userphoto.Image = Variables.B;
+                    
                     Variables.UserNom = UserTxt.Text;
                     Variables.UserPass = PassTxt.Text;
                     Variables.intro.username.Text = Variables.UserNom;

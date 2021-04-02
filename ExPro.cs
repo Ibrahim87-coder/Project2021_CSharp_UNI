@@ -37,8 +37,8 @@ namespace Start
         DataRow[] dr;
         private void Exercice1ReconaissanceDeSons_Load(object sender, EventArgs e)//load
         {
-            c = 0; z = 0; k = 0; 
-
+            c = 0; z = 0; k = 0;
+            label4.Hide();
             dr = Variables.XmlReader(Application.StartupPath + "\\users.xml");
             w= int.Parse(dr[0]["Prononciation"].ToString());
 

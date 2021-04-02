@@ -360,7 +360,7 @@
         fEVE3l8fEgCQP8b9gcBS8b7L/w9EdBqpgazerwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAPJlJREFUeF7t
         nQt8FOW5h7XW6mk9tlqtQG3r6e30olaKoqKAd0VB0SSQACre6M2251Rba2uVtt7QVkVRAYFkZgP1pFV7

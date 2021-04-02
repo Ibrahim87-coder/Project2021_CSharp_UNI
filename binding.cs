@@ -16,7 +16,13 @@ namespace Start
    
     public partial class binding : UserControl
     {
-        RoundButton[] rDep,rDest;Random r = new Random();public int depart,score=0,resolu=0;public  ArrayList rand;Label[] lDep, lDest;XmlDocument gram;public string lecon;public int dest;public Panel panl;
+        RoundButton[] rDep,rDest;
+        Random r = new Random();
+        int depart,score=0,resolu=0;
+        ArrayList rand;Label[] lDep, lDest;XmlDocument gram;
+        string lecon;
+        int dest;
+        Panel panl;
         SoundPlayer reussi = new SoundPlayer(@"Voix\Merveillleux.m4a"), wrong = new SoundPlayer(@"Voix\fail.wav");
         struct Couple
         {
@@ -25,21 +31,45 @@ namespace Start
         }
         public binding()
         {
-            InitializeComponent();
-         // dr = Variables.XmlReader(Application.StartupPath+"\\users.xml");
-            gram = new XmlDocument();
-            gram.Load(Application.StartupPath + @"\Gramm.xml"); CryptageEtHachage.DeCrypNode(gram.DocumentElement);
+
         }
-        
+        public binding(string chapitre, int destination, int Nbdepart, Panel p, ArrayList r)
+        {
+            InitializeComponent();
+            panl = p;
+            dest = destination; 
+            depart = Nbdepart; 
+            lecon = chapitre;
+            rand = r;
+            gram = new XmlDocument();
+            gram.Load(Application.StartupPath + @"\Gramm.xml");
+            CryptageEtHachage.DeCrypNode(gram.DocumentElement);
+
+        }
+
         private void binding_Load(object sender, EventArgs e)
         {
-            g = this.CreateGraphics();this.Parent.BackgroundImage = new Bitmap(Application.StartupPath + @"\Pics\Francais\backbinding.jpg");
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality; rDep = new RoundButton[depart]; rDest = new RoundButton[dest]; lDep = new Label [depart]; lDest = new Label [dest];
+            g = this.CreateGraphics();
+            this.Parent.BackgroundImage = new Bitmap(Application.StartupPath + @"\Pics\Francais\backbinding.jpg");
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality; 
+            rDep = new RoundButton[depart];
+            rDest = new RoundButton[dest]; 
+            lDep = new Label [depart];
+            lDest = new Label [dest];
             for (int i = 0; i < depart; i++)
             {   
-                rDep[i] = new RoundButton(); rDep[i].BackColor = Color.WhiteSmoke ; rDep[i].Tag = gram.GetElementsByTagName(lecon )[1].InnerText.Split(',')[(int)rand[i]] ; rDep[i].Size = new Size(25, 30);
-                rDep[i].Location = new Point(300, 50 + i * 30); rDep[i].MouseUp += mouseUp; rDep[i].MouseMove += mouse_Mouve; this.Controls.Add(rDep[i]);
-                lDep[i] = new Label();lDep[i].Size = new Size(280, 30);lDep[i].Text= gram.GetElementsByTagName(lecon )[0].InnerText.Split(',')[(int)rand[i]];lDep[i].TextAlign = ContentAlignment.TopRight; lDep[i].Location = new Point(10, 50 + i * 30);lDep[i].ForeColor = Color.WhiteSmoke; lDep[i].Font = new Font("Lemon", 10, FontStyle.Regular); this.Controls.Add(lDep[i]);
+                rDep[i] = new RoundButton(); rDep[i].BackColor = Color.WhiteSmoke ;
+                rDep[i].Tag = gram.GetElementsByTagName(lecon )[1].InnerText.Split(',')[(int)rand[i]] ;
+                rDep[i].Size = new Size(25, 30);
+                rDep[i].Location = new Point(300, 50 + i * 30);
+                rDep[i].MouseUp += mouseUp; 
+                rDep[i].MouseMove += mouse_Mouve;
+                this.Controls.Add(rDep[i]);
+                lDep[i] = new Label();lDep[i].Size = new Size(280, 30);
+                lDep[i].Text= gram.GetElementsByTagName(lecon )[0].InnerText.Split(',')[(int)rand[i]];
+                lDep[i].TextAlign = ContentAlignment.TopRight; lDep[i].Location = new Point(10, 50 + i * 30);
+                lDep[i].ForeColor = Color.WhiteSmoke; lDep[i].Font = new Font("Lemon", 10, FontStyle.Regular); 
+                this.Controls.Add(lDep[i]);
             }
             for (int j = 0; j< dest; j++)
             {

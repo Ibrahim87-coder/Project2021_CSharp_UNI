@@ -31,46 +31,78 @@ namespace  Start
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            groupBox2.Visible = false;  groupBox3.Visible = true;groupBox4.Visible = false;
+            groupBox2.Visible = false;
+            groupBox3.Visible = true;
+            groupBox4.Visible = false;
         }
+
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            groupBox3.Visible = false; groupBox2.Visible = true; groupBox4.Visible = false;
+            groupBox3.Visible = false; 
+            groupBox2.Visible = true; 
+            groupBox4.Visible = false;
         }
         RadioButton rd;
         private void button2_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked) foreach (RadioButton rb in groupBox3.Controls) { if (rb.Checked) { rd = rb; nodeQuestions = prof.SelectSingleNode("Prof/Francais/" + rb.Name + "/Questions"); lecon = rb.Name; nodeChoices = prof.SelectSingleNode("Prof/Francais/" + rb.Name + "/Choices"); } }
-            else foreach (RadioButton rbM in groupBox2.Controls) if (rbM.Checked) { rd = rbM; nodeQuestions = prof.SelectSingleNode("Prof/Maths/" + rbM.Name + "/Questions"); nodeChoices = prof.SelectSingleNode("Prof/Maths/" + rbM.Name + "/Choices"); }
-                    else foreach (RadioButton rbS in groupBox4.Controls) if (rbS.Checked) { rd = rbS; nodeQuestions = prof.SelectSingleNode("Prof/Sciences/" + rbS.Name + "/Questions"); nodeChoices = prof.SelectSingleNode("Prof/Sciences/" + rbS.Name + "/Choices"); }
+            if (radioButton1.Checked) 
+                foreach (RadioButton rb in groupBox3.Controls) 
+                {
+                    if (rb.Checked)
+                    {
+                        rd = rb;
+                        nodeQuestions = prof.SelectSingleNode("Prof/Francais/" + rb.Name + "/Questions");
+                        lecon = rb.Name; 
+                        nodeChoices = prof.SelectSingleNode("Prof/Francais/" + rb.Name + "/Choices"); 
+                    } 
+                }
+            else 
+                foreach (RadioButton rbM in groupBox2.Controls)
+                    if (rbM.Checked) 
+                    {
+                        rd = rbM; 
+                        nodeQuestions = prof.SelectSingleNode("Prof/Maths/" + rbM.Name + "/Questions"); 
+                        nodeChoices = prof.SelectSingleNode("Prof/Maths/" + rbM.Name + "/Choices"); 
+                    }
+                    else
+                        foreach (RadioButton rbS in groupBox4.Controls) 
+                            if (rbS.Checked) 
+                            {
+                                rd = rbS; 
+                                nodeQuestions = prof.SelectSingleNode("Prof/Sciences/" + rbS.Name + "/Questions");
+                                nodeChoices = prof.SelectSingleNode("Prof/Sciences/" + rbS.Name + "/Choices");
+                            }
             if (nodeQuestions == null) { MessageBox.Show("Choisis une lecon"); return; }
-            label3.Visible = false ;groupBox3.Visible = groupBox2.Visible = groupBox1.Visible=groupBox4.Visible  = false;button2.Visible = false;button1.Visible = true;
-            ds.ReadXml(Application.StartupPath + "\\Prof.xml");   dataGridView1.Visible = true; 
-           
+            label3.Visible = false ;
+            groupBox3.Visible = groupBox2.Visible = groupBox1.Visible=groupBox4.Visible  = false;
+            button2.Visible = false;
+            button1.Visible = true;
+            ds.ReadXml(Application.StartupPath + "\\Prof.xml");
+            dataGridView1.Visible = true; 
         }
-        DataSet ds=new DataSet ();DataTable t, ClassDt, StudentDt;DataRow r1, r2;string question="",choices="";
-
+        DataSet ds=new DataSet ();
+        DataTable t, ClassDt, StudentDt;
+        DataRow r1, r2;
+        string question="",choices="";
         private void radioButton11_CheckedChanged(object sender, EventArgs e)
         {
 
         }
-
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            groupBox3.Visible = false; groupBox4.Visible = true; groupBox2.Visible = false;
+           
         }
-
         private void Perimetre_CheckedChanged(object sender, EventArgs e)
         {
 
         }
-
         private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
         {
-
+            groupBox3.Visible = false;
+            groupBox4.Visible = true;
+            groupBox2.Visible = false;
         }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -78,9 +110,16 @@ namespace  Start
         string exercices;DataRow[] dr;
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-           for(int i=0;i<19;i++) exercices+= Variables.exSup[i]+",";exercices=exercices.Remove(exercices.LastIndexOf(','));dr[0]["exSupp"]=exercices;Variables.XmlWriter(Application.StartupPath + "\\users.xml");
+           for(int i=0;i<19;i++)
+                exercices+= Variables.exSup[i]+",";exercices=exercices.Remove(exercices.LastIndexOf(','));dr[0]["exSupp"]=exercices;Variables.XmlWriter(Application.StartupPath + "\\users.xml");
             this.Close();
             Variables.intro.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            CryptageEtHachage.HashXmlUsers(Variables.UserNom, Variables.UserPass, Application.StartupPath + "\\users.xml");
         }
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -114,16 +153,20 @@ namespace  Start
 
 
           
-            if (nodeQuestions.InnerText == "0") nodeQuestions.InnerText = ""; else question=question.Insert(0, ",");
-           question= question.Remove(question.LastIndexOf(','));
+            if (nodeQuestions.InnerText == "0")
+                nodeQuestions.InnerText = ""; 
+            else question=question.Insert(0, ",");
+
+            question= question.Remove(question.LastIndexOf(','));
             nodeQuestions.InnerText += question;
-            if (nodeChoices.InnerText == "0") nodeChoices.InnerText = ""; else choices = choices.Insert(0, ",");
-           choices= choices.Remove(choices.LastIndexOf(','));
+            if (nodeChoices.InnerText == "0") 
+                nodeChoices.InnerText = "";
+            else choices = choices.Insert(0, ",");
+            choices= choices.Remove(choices.LastIndexOf(','));
             nodeChoices.InnerText += choices ;
-            prof.Save(Application.StartupPath + "\\Prof.xml");fin = debut + dataGridView1.Rows.Count - 1;
-            //t = ds.Tables[0];r1 = t.Rows[0];
-            //ds.WriteXml(Application.StartupPath + "\\Prof.xml");
-            //for(int i=0;i<dataGridView1.Rows.Count ;i++) r1[0]+=dataGridView1.
+            prof.Save(Application.StartupPath + "\\Prof.xml");
+            fin = debut + dataGridView1.Rows.Count - 1;
+           
 
         }
     }

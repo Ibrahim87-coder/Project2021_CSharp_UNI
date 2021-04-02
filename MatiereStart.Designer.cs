@@ -244,7 +244,7 @@
             this.PanelMaths.Controls.Add(this.Picmt1);
             this.PanelMaths.Controls.Add(this.Picmt3);
             this.PanelMaths.Controls.Add(this.PicmtEX5);
-            this.PanelMaths.Location = new System.Drawing.Point(348, 164);
+            this.PanelMaths.Location = new System.Drawing.Point(351, 155);
             this.PanelMaths.Name = "PanelMaths";
             this.PanelMaths.Size = new System.Drawing.Size(860, 510);
             this.PanelMaths.TabIndex = 90;

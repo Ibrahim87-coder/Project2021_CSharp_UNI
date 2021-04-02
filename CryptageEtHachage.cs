@@ -30,8 +30,7 @@ namespace Start
                     return "??????????";
                 DESCryptoServiceProvider cryptoProvider = GenerateKey();
                 MemoryStream memoryStream = new MemoryStream(Convert.FromBase64String(MotChiffre));
-                CryptoStream cryptoStream = new CryptoStream(memoryStream,
-                    cryptoProvider.CreateDecryptor(cryptoProvider.Key, cryptoProvider.IV), CryptoStreamMode.Read);
+                CryptoStream cryptoStream = new CryptoStream(memoryStream,cryptoProvider.CreateDecryptor(cryptoProvider.Key, cryptoProvider.IV), CryptoStreamMode.Read);
                 StreamReader reader = new StreamReader(cryptoStream);
                 return reader.ReadToEnd();
             }
@@ -43,13 +42,15 @@ namespace Start
         public  static void DeCrypNode(XmlNode x)
         {
             if (!x.HasChildNodes)
-            { x.InnerText = DeChiffrer(x.InnerText); }
+            {
+                x.InnerText = DeChiffrer(x.InnerText); 
+            }
 
             else for (int i = 0; i < x.ChildNodes.Count; i++)
-                {
+            {
                     DeCrypNode(x.ChildNodes[i]);
 
-                }
+            }
 
         }
         static string hash = "hashP@ss&ScorePr0jet2o2oH_I_H";

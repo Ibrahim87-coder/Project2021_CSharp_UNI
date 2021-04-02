@@ -27,16 +27,18 @@ namespace Start
 
             if (prof.GetElementsByTagName(r.Name)[0].InnerText != "0")
             {
-                choixMultiple.len = prof.GetElementsByTagName(r.Name)[0].InnerText.Split(',').Length; 
-                choixMultiple.max = prof.GetElementsByTagName(r.Name)[0].InnerText.Split(',').Length; 
-                choixMultiple choiprn = new choixMultiple(); 
-                choiprn.xmlFile = "Prof"; 
-                choiprn.pan = panconv;
-                choiprn.rands = ComMethodes.Generate(choixMultiple.len, choixMultiple.max);
-                choiprn.lecon = r.Name;
-                choiprn.Show(); 
-                choiprn.BringToFront();
+                var len = prof.GetElementsByTagName(r.Name)[0].InnerText.Split(',').Length; 
+                var max = prof.GetElementsByTagName(r.Name)[0].InnerText.Split(',').Length; 
+                //choixMultiple choiprn = new choixMultiple(); 
+                //choiprn.xmlFile = "Prof"; 
+                //choiprn.pan = panconv;
+                //choiprn.rands = ComMethodes.Generate(choixMultiple.len, choixMultiple.max);
+                //choiprn.lecon = r.Name;
+                //choiprn.Show(); 
+                
+                //choiprn.BringToFront();
 
+                choixMultiple choiprn = new choixMultiple(ComMethodes.Generate(len, max), r.Name, panconv, len, max, "Prof");
                 this.Controls.Add(choiprn);
                 choiprn.Dock = DockStyle.Fill;
                 choiprn.BringToFront();

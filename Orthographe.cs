@@ -29,15 +29,16 @@ namespace Start
         {
             int[] randoms = new int[10];
             do { for (int i = 0; i < 10; i++) randoms[i] = r.Next(20); }
-            while (randoms[1] == randoms[2] ||
-                   randoms[2] == randoms[3] || randoms[3] == randoms[4]
-                   || randoms[4] == randoms[5] || randoms[5] == randoms[6]
-                   || randoms[6] == randoms[7] || randoms[7] == randoms[8] ||
-                   randoms[9] == randoms[0] || randoms[3] == randoms[8] || randoms[4] == randoms[7]
-                   || randoms[0] == randoms[1] || randoms[0] == randoms[4] || randoms[6] == randoms[2]||
-                    randoms[5] == randoms[1]
-                   || randoms[6] == randoms[8] || randoms[0] == randoms[8] ||
-                   randoms[3] == randoms[0]||randoms[2]==randoms[4]||randoms[3]==randoms[5]);
+            while (randoms[1] == randoms[2] || randoms[2] == randoms[3] ||
+                   randoms[3] == randoms[4] || randoms[4] == randoms[5] ||
+                   randoms[5] == randoms[6] || randoms[6] == randoms[7] ||
+                   randoms[7] == randoms[8] || randoms[9] == randoms[0] ||
+                   randoms[3] == randoms[8] || randoms[4] == randoms[7] || 
+                   randoms[0] == randoms[1] || randoms[0] == randoms[4] ||
+                   randoms[6] == randoms[2] || randoms[5] == randoms[1] ||
+                   randoms[6] == randoms[8] || randoms[0] == randoms[8] ||
+                   randoms[3] == randoms[0] || randoms[2] == randoms[4] ||
+                   randoms[3] == randoms[5]);
             return randoms;
         }
         string[] TrueFalse(out string[] deux)
@@ -68,9 +69,10 @@ namespace Start
             dr = Variables.XmlReader(Application.StartupPath + "\\users.xml");
             dr[0]["orthographe"] = score;
             Variables.XmlWriter(Application.StartupPath + "\\users.xml");
-            this.Close(); ; hom.Show();
-            Variables.matiere.Show();
-            Variables.matiere.ShowInTaskbar = true;
+            this.Close();
+            hom.Show();
+          
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)

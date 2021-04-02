@@ -212,7 +212,7 @@ namespace Start
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(406, 458);
+            this.panel4.Location = new System.Drawing.Point(403, 455);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(396, 257);
             this.panel4.TabIndex = 27;
@@ -268,7 +268,6 @@ namespace Start
             this.Name = "homlvl2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "orthographe";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.ortho_Load);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

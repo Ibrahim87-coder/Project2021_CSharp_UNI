@@ -27,8 +27,8 @@ namespace Start
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
-            Variables.science.Show();
-            Variables.science.ShowInTaskbar = true;
+            Variables.intro.Show();
+            Variables.intro.ShowInTaskbar = true;
         }
 
         private void ScienceStart_Load(object sender, EventArgs e)

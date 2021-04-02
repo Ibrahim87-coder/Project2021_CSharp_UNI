@@ -104,7 +104,7 @@
             this.username.AutoSize = true;
             this.username.BackColor = System.Drawing.Color.Transparent;
             this.username.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.ForeColor = System.Drawing.Color.Crimson;
+            this.username.ForeColor = System.Drawing.Color.Honeydew;
             this.username.Location = new System.Drawing.Point(12, 165);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(122, 55);
