@@ -14,6 +14,7 @@ namespace Start
 {
     public partial class phraseoEx : UserControl
     {
+        XmlDocument gram;
         public phraseoEx()
         {
             //gram = new XmlDocument();dr = Variables.XmlReader(Application.StartupPath + "\\users.xml");
@@ -21,7 +22,7 @@ namespace Start
             InitializeComponent();newEx();
         }
         List<string> mots = new List<string>();
-        Label[] motsLabels; string s;int i = -1;XmlDocument gram;int score,vrais;
+        Label[] motsLabels; string s;int i = -1;int score,vrais;
    
 
         private void newEx()

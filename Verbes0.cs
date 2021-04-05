@@ -71,7 +71,7 @@ namespace Start
 
             label1.Visible = true;
             int  sujet = r.Next(6);
-            if (a == 2) verbe = r.Next(a); else try { verbe = r.Next(3,a); } catch (Exception e) { MessageBox.Show("Le temps present est choisi par defaut"); verbe = 0; };
+            if (a == 2) verbe = r.Next(a); else try { verbe = r.Next(3,a); } catch { MessageBox.Show("Le temps present est choisi par defaut"); verbe = 0; };
             if (b == 0)
             {
 
@@ -145,7 +145,7 @@ namespace Start
         int verbe;
         private string[] falseAnswers2(string reponse, int a, int b)//trueChoice//verb//presOuPasse
         {
-            int taille = reponse.Length; string[] choices = new string[7], term1 = { "âmes", "âtes", "iront", "îmes", "îtes", "èrent", "iront", "ais", "ait", "ions", "irez", "issent", "issons", "as", "a", "is", "it", "ssent" }; int a1 = 6, a2 = 18;
+            int taille = reponse.Length; string[] choices = new string[7], term1 = { "âmes", "âtes", "iront", "îmes", "îtes", "èrent", "iront", "ais", "ait", "ions", "irez", "issent", "issons", "as", "a", "is", "it", "ssent" };
             do
             {
                 choices[0] = reponse.Remove(taille - 1) + term1[r.Next(18)]; choices[1] = flsse[r.Next(1, 8)].InnerText.Split(',')[r.Next(1, 6)].ToString();

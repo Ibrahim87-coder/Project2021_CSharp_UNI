@@ -12,12 +12,12 @@ namespace Start
 {
     public partial class cours_Prononciation : Form
     {
-        int i = 65, j = 1, k = 0, l = 1, score, ticks = 0, r; Random rnd = new Random(); SoundPlayer[] lettres = new SoundPlayer[26], lettresExemple = new SoundPlayer[26]; public int choix;
-        Bitmap[] photosLettres = new Bitmap[26];// char[] voyelles = { 'a', 'e', 'i', 'o', 'u' }; int[] combinaison = { 0, 2, 0, 4, 1, 2, 1, 4, 3, 2, 3, 4 }; 
+        int i = 65, j = 1, k = 0, l = 1; public int choix;
+      // char[] voyelles = { 'a', 'e', 'i', 'o', 'u' }; int[] combinaison = { 0, 2, 0, 4, 1, 2, 1, 4, 3, 2, 3, 4 }; 
         Bitmap x, theo;
         string[] combinaison = { "a  +   i = ai", "a  +   u = au", "e  +  i = ei" , "e  +   u = eu", "o  +  i = oi", "o  +  u = ou" };
        
-      WMPLib.WindowsMediaPlayer p1 = new WMPLib.WindowsMediaPlayer();
+        WindowsMediaPlayer p1 = new WindowsMediaPlayer();
         XmlDocument sonsEx; string[] sonssex, sounds = new string[32];
         public cours_Prononciation()
         {

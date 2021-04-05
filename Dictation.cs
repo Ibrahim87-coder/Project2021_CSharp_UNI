@@ -19,8 +19,8 @@ namespace Start
         {
             InitializeComponent();
             conjugaison = new XmlDocument();
-            conjugaison.Load(Application.StartupPath + @"\conjugaison.xml");
-            CryptageEtHachage.DeCrypNode(conjugaison .DocumentElement);
+            conjugaison.Load(Application.StartupPath + @"\francais.xml");
+            CryptageEtHachage.DeCrypNode(conjugaison.DocumentElement);
         }
         Random r = new Random ();string vrai11, vrai12, vrai13, vrai21, vrai22; int a = 1;
 
@@ -36,10 +36,8 @@ namespace Start
         string[] Repponses;
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            Repponses = Reponses();
+             Repponses = Reponses();
              dic1.texts(); 
-
-
         }
 
         XmlDocument conjugaison;float  noteLevel;string remarques=null ;
@@ -248,7 +246,7 @@ namespace Start
 
                     }
                 }
-                return "Mots manques:" + sa;
+                return "Mots manques " + sa;
             }
         }
 

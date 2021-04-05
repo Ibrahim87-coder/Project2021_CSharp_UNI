@@ -12,7 +12,7 @@ namespace Start
 {
     public partial class Planetes : Form
     {
-        int theta = 1000, i = 0; 
+        int theta = 1000; 
         int[] diametres = { 33, 50, 85, 110, 156, 187, 226, 246, 267 }
         , centreX = { 472, 448, 446, 452, 452, 452, 452, 452, 452 }
         , centreY = { 303, 289, 281, 297, 289, 277, 289, 289, 289 };
@@ -101,8 +101,7 @@ namespace Start
                         score += 5;
 
                 arr.Add(rand);
-                o = false;
-                carCheck = false;
+               
                 do 
                 {
                     rand2 = r.Next(3);
@@ -156,7 +155,7 @@ namespace Start
         PictureBox[] pb = new PictureBox[9];
 
         CheckBox[] chces1 = new CheckBox[3], chces2 = new CheckBox[3];
-        bool carCheck = false, o = false;
+        
 
         public Planetes()
         {

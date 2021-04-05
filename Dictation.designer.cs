@@ -29,22 +29,28 @@ namespace Start
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dictée));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dic1 = new Start.dictee1();
             this.button10 = new System.Windows.Forms.Button();
             this.picBack = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBack)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::Start.Properties.Resources.icons8_submit_for_approval_50;
             this.pictureBox1.Location = new System.Drawing.Point(881, 533);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Confirmer");
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // dic1
@@ -118,6 +124,7 @@ namespace Start
         private dictee1 dic1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.PictureBox picBack;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

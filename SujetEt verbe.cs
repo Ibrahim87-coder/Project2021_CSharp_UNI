@@ -147,7 +147,7 @@ namespace Start
             e.Effect = DragDropEffects.Move;
         }
 
-        int choosen;
+        
         //private void roundButton1_Click(object sender, EventArgs e)
         //{
         //    choosen = 0;

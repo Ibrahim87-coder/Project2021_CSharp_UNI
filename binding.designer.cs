@@ -34,13 +34,14 @@ namespace Start
             // 
             // comfirmerB
             // 
+            this.comfirmerB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comfirmerB.FlatAppearance.BorderSize = 0;
             this.comfirmerB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comfirmerB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comfirmerB.ForeColor = System.Drawing.Color.White;
             this.comfirmerB.Location = new System.Drawing.Point(638, 387);
             this.comfirmerB.Name = "comfirmerB";
-            this.comfirmerB.Size = new System.Drawing.Size(139, 60);
+            this.comfirmerB.Size = new System.Drawing.Size(176, 60);
             this.comfirmerB.TabIndex = 1;
             this.comfirmerB.Text = "Confirmer";
             this.comfirmerB.UseVisualStyleBackColor = true;

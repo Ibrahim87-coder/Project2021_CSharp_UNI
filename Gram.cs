@@ -274,11 +274,8 @@ namespace Start
         private void button1_Click_1(object sender, EventArgs e)
         {
             CryptageEtHachage.HashXmlUsers(Variables.UserNom, Variables.UserPass, Application.StartupPath + "\\users.xml");
-
-
             Application.Exit();
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             panconv.Visible = true;

@@ -23,58 +23,61 @@ namespace Start
 
         public static  cours_de_grammaire g = new cours_de_grammaire();
 
-        static string  [] exSuppNb=new string[19];
-        public static string [] exSup
-        {
-            set { exSuppNb  = value; }
-            get
-            {
-              
-                return  exSuppNb ;
-            }
-            
-        }
+        
+        //static string  [] exSuppNb=new string[19];
+        
+        public static string [] exSup { get; set; }
+        //{
+        //    set { exSuppNb  = value; }
+        //    get
+        //    {
+        //        return  exSuppNb ;
+        //    }
+        //}
         // For save image of user (boy or girl)
-        static Bitmap b;
-        static int lvlmt, lvlfr;
-       
-       public static int levelmt
-        {
-            get { return lvlmt; }
-            set { lvlmt = value; }
-        }
+        //static Bitmap b;
+        //static int lvlmt, lvlfr;
+       public static int levelmt { get; set; }
+        //{
+        //    get { return lvlmt; }
+        //    set { lvlmt = value; }
+        //}
 
-       public static int levelfr
-        {
-            get { return lvlfr; }
-            set { lvlfr = value; }
-        }
-        public static Bitmap B
-        {
-            set { b = value; }
-            get { return b; }
+       public static int levelfr { get; set; }
+        //{
+        //    get { return lvlfr; }
+        //    set { lvlfr = value; }
+        //}
+        public static Bitmap B { get; set; }
+        //{
+        //    set { b = value; }
+        //    get { return b; }
             
-        }
-        static int count;
-        public static int counter
-        {
-            get { return count; }
-            set { count = value; }
-        }
-        static string MatiereNom;
-        public static string MatiereNomPublic
-        {
-            get { return MatiereNom; }
-            set { MatiereNom = value; }
-        }
+        //}
+       
+        //static int count;
+        
+        public static int counter { get; set; }
+        //{
+        //    get { return count; }
+        //    set { count = value; }
+        //}
+        
+        //static string MatiereNom;
+        
+        public static string MatiereNomPublic { get; set; }
+        //{
+        //    get { return MatiereNom; }
+        //    set { MatiereNom = value; }
+        //}
 
         // Nom de l'utilisateur
-        static string usernom;
-        public static string UserNom
-        {
-            get { return usernom; }
-            set { usernom = value; }
-        }
+      //  static string usernom;
+        public static string UserNom { get; set; }
+        //{
+        //    get { return usernom; }
+        //    set { usernom = value; }
+        //}
         public static bool ExisteMessage(string s)
         {
             DataSet ds = new DataSet(); int i = 0; bool o = false;
@@ -87,7 +90,6 @@ namespace Start
             }
             return o;
         }
-
         static DataTable dt;
         static DataRow[] dr;
         static DataSet ds;
@@ -96,7 +98,7 @@ namespace Start
             ds = new DataSet();
             ds.ReadXml(path);
             dt = ds.Tables[0];
-            dr = dt.Select("(([user] = '" + usernom + "') AND ([pass] = '" +    Variables.UserPass  + "'))");
+            dr = dt.Select("(([user] = '" + Variables.UserNom + "') AND ([pass] = '" +    Variables.UserPass  + "'))");
             return dr;
         }
 
@@ -106,15 +108,17 @@ namespace Start
 
         }
         // bool eleve ou prof
-        static bool type;
-        public static bool Type 
-        {
-            // if prof true else eleve
-            get { return type ; }
-            set { type = value; }
-        }
-        static string pass;
-        public static string UserPass { get { return pass; } set { pass = value; } }
+        //static bool type;
+        public static bool Type { get; set; }
+        //{
+        //    // if prof true else eleve
+        //    get { return type ; }
+        //    set { type = value; }
+        //}
+        
+        //static string pass;
+        public static string UserPass { get; set; } 
+        //{ get { return pass; } set { pass = value; } }
 
         // form de francais
         public static bool Exit = true;

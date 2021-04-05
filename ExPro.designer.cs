@@ -76,10 +76,10 @@
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1089, 400);
+            this.button2.Location = new System.Drawing.Point(1093, 392);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 96);
+            this.button2.Size = new System.Drawing.Size(156, 93);
             this.button2.TabIndex = 20;
             this.button2.Text = "Reecouter";
             this.button2.UseVisualStyleBackColor = false;
@@ -168,6 +168,7 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(484, 372);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -182,6 +183,7 @@
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.ErrorImage = null;
             this.pictureBox3.Location = new System.Drawing.Point(595, 372);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
@@ -196,6 +198,7 @@
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.ErrorImage = null;
             this.pictureBox4.Location = new System.Drawing.Point(716, 372);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
@@ -210,6 +213,7 @@
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.ErrorImage = null;
             this.pictureBox5.Location = new System.Drawing.Point(838, 372);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
@@ -224,6 +228,7 @@
             // 
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.ErrorImage = null;
             this.pictureBox6.Location = new System.Drawing.Point(956, 372);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);

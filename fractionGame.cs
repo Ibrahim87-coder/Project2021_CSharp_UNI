@@ -14,7 +14,7 @@ namespace Start
     public partial class jeux_de_fraction : Form
     { 
         public List<int> randomlist = new List<int>();
-        bool rep1busy, rep2busy, rep3busy, UsingHelp, lost;
+        bool rep1busy, rep2busy, rep3busy,lost;
         PictureBox[] pic; 
         Random r0 = new Random();
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace Start
 
 
 
-            int cc = 0;
+            
             c = r0.Next(0, 3);
            
             b = r0.Next(7);
@@ -173,7 +173,7 @@ namespace Start
         }
 
         private void Piz1_MouseMove(object sender, MouseEventArgs e)
-        { Object b;
+        { 
             PictureBox PB = (PictureBox)sender;
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
@@ -390,14 +390,14 @@ namespace Start
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            UsingHelp = false;
+            
             CancelButton.Visible = false;
             HelpPic.Visible = false;
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            UsingHelp = true;
+            
             HelpPic.Visible = true;
             CancelButton.Visible = true;
         }

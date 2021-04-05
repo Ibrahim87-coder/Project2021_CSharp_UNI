@@ -13,7 +13,7 @@ namespace Start
     public partial class Coloriage : Form
     {
         Coloriage2 f= new Coloriage2() ;
-        Graphics g; int x = -1, y = -1, w; bool moving; Pen p; Color clr = Color.Lime;
+        Graphics g; Pen p; Color clr = Color.Lime;
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -71,7 +71,7 @@ namespace Start
             InitializeComponent();
             g = pictureBox1.CreateGraphics();
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            p = new Pen(clr, w);
+            p = new Pen(clr, 0);
             p.StartCap = p.EndCap = System.Drawing.Drawing2D.LineCap.Triangle;
         }
 

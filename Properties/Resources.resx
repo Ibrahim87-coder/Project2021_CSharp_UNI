@@ -118,88 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lock_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\lock_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Card4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Msg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\Msg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LifeOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\LifeOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="newMsg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\newMsg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newASsignment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Pics\newASsignment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Image20210220092104" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\Image20210220092104.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Card2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Card3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Card3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Card1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BackPro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\Francais\BackPro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="newMsg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\newMsg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="assignment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\assignment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Card8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-end-button-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\icons8-end-button-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Card10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Card6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="crown2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crown2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="left_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\left_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit_sign_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\exit_sign_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LifeOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\LifeOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Card9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Card9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Card7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="crown3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crown3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="crown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Card5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Card5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-home-button-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Pics\icons8-home-button-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit_sign_480px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\exit_sign_480px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back_to_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Pics\back_to_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Card5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\lock_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crown3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crown3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crown2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crown2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\Msg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="next_page_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Pics\next_page_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\left_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assignment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\assignment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image20210220092104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\Image20210220092104.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-home-button-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\icons8-home-button-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crown1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-end-button-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\icons8-end-button-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-submit-for-approval-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\icons8-submit-for-approval-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

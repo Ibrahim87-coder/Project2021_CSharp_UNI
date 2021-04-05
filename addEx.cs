@@ -17,7 +17,7 @@ namespace  Start
         {
             InitializeComponent();prof.Load(Application.StartupPath + "\\Prof.xml");// nodeLecon = prof.SelectSingleNode("Prof/Francais/Conjugaison2");
         }
-        XmlNode nodeQuestions , nodeChoices;int debut, fin, lvl;string lecon;
+        XmlNode nodeQuestions , nodeChoices;
 
         private void groupBox3_Enter(object sender, EventArgs e)
         {
@@ -53,7 +53,7 @@ namespace  Start
                     {
                         rd = rb;
                         nodeQuestions = prof.SelectSingleNode("Prof/Francais/" + rb.Name + "/Questions");
-                        lecon = rb.Name; 
+                       
                         nodeChoices = prof.SelectSingleNode("Prof/Francais/" + rb.Name + "/Choices"); 
                     } 
                 }
@@ -82,8 +82,7 @@ namespace  Start
             dataGridView1.Visible = true; 
         }
         DataSet ds=new DataSet ();
-        DataTable t, ClassDt, StudentDt;
-        DataRow r1, r2;
+
         string question="",choices="";
         private void radioButton11_CheckedChanged(object sender, EventArgs e)
         {
@@ -165,7 +164,7 @@ namespace  Start
             choices= choices.Remove(choices.LastIndexOf(','));
             nodeChoices.InnerText += choices ;
             prof.Save(Application.StartupPath + "\\Prof.xml");
-            fin = debut + dataGridView1.Rows.Count - 1;
+            
            
 
         }

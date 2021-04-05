@@ -159,6 +159,7 @@ namespace Start
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.button1);
@@ -212,7 +213,8 @@ namespace Start
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(403, 455);
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Location = new System.Drawing.Point(409, 455);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(396, 257);
             this.panel4.TabIndex = 27;
@@ -254,6 +256,8 @@ namespace Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Start.Properties.Resources.BackPro;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1360, 727);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);

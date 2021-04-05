@@ -55,7 +55,7 @@ namespace Start
             pictureBox2.ImageLocation = s1[0]; pictureBox3.ImageLocation = s1[1];
             pictureBox4.ImageLocation = s1[2]; pictureBox5.ImageLocation = s1[3]; pictureBox6.ImageLocation = s1[4];
         }
-      static   Random r = new Random();static Bitmap b;static int [] aConv = { 1, 2, 3, 6, 7, 10, 11, 14, 19, 9, 15, 17, 21, 25, 22, 23, 31, 39, 27, 45, 40, 48, 64, 65, 54, 75, 70, 77 };
+      static   Random r = new Random();static int [] aConv = { 1, 2, 3, 6, 7, 10, 11, 14, 19, 9, 15, 17, 21, 25, 22, 23, 31, 39, 27, 45, 40, 48, 64, 65, 54, 75, 70, 77 };
 
         private void button10_Click(object sender, EventArgs e)
         {
@@ -75,7 +75,7 @@ namespace Start
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            label2.Visible = false;
             ou.Dispose(); label11.Visible = false;sSynth.SelectVoice(sSynth.GetInstalledVoices()[0].VoiceInfo.Name);
             label7.Visible = false; label6.Visible = false;
             label8.Visible = false; button3.Visible = false; button1.Visible = false;

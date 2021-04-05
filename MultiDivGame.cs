@@ -51,7 +51,7 @@ namespace Start
     }
     void MakeQuestion(Label t)
     {
-        string cb;
+       
         int a, b, c;
         c = r3.Next(0, 2);
 

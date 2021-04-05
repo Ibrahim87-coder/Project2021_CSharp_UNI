@@ -98,7 +98,12 @@ namespace Start
                     else
                     {
 
-                        lockmt1.Visible = lockmt2.Visible = lockmt3.Visible = lockmt4.Visible = false;lvlMaths.Image = Properties.Resources.crown2;
+                        lockmt1.Visible = lockmt2.Visible = lockmt3.Visible = lockmt4.Visible = false;
+                        if(lvlMaths.Image == Properties.Resources.crown1)
+                        {
+                            lvlMaths.Image = Properties.Resources.crown2;
+                        }
+                        
                         PicmtEX1.Enabled = PicmtEX2.Enabled = PicmtEX3.Enabled = PicmtCours4.Enabled = PicmtEX4.Enabled = PicmtCours1.Enabled = PicmtCours2.Enabled = PicmtCours3.Enabled = true;
                         if(Variables.levelmt==1){
                             Variables.levelmt = 2;
@@ -137,12 +142,21 @@ namespace Start
                     PanelFrancais.Visible = true;
                     if (int.Parse(dr[0]["prononciation"].ToString()) + int.Parse(dr[0]["Ecriture"].ToString()) < 2)
                     {
-                        lock1.Visible = lock2.Visible = lock3.Visible = true;lvlFrancais.Image = Properties.Resources.crown2;
+                        lock1.Visible = lock2.Visible = lock3.Visible = true;
+                        if (lvlFrancais.Image == Properties.Resources.crown1)
+                        {
+                            lvlFrancais.Image = Properties.Resources.crown2;
+                        }
+                        
                         PicfrEX1.Enabled = PicfrEX2.Enabled = PicfrEX3.Enabled = PicfrCours1.Enabled = PicfrCours2.Enabled = PicfrCours3.Enabled = false;
                     }
                     else
                     {
-                        lock1.Visible = lock2.Visible = lock3.Visible = false;lvlFrancais.Image = Properties.Resources.crown2;
+                        lock1.Visible = lock2.Visible = lock3.Visible = false;
+                        if (lvlFrancais.Image == Properties.Resources.crown1)
+                        {
+                            lvlFrancais.Image = Properties.Resources.crown2;
+                        }
                         PicfrEX1.Enabled = PicfrEX2.Enabled = PicfrEX3.Enabled = PicfrCours1.Enabled = PicfrCours2.Enabled = PicfrCours3.Enabled = true;
                         if (Variables.levelfr == 1)
                         {
@@ -189,7 +203,7 @@ namespace Start
                     }
                     else
                     {
-                        lvlMaths.Image = Properties.Resources.crown3;
+                        if(lvlMaths.Image == Properties.Resources.crown2) lvlMaths.Image = Properties.Resources.crown3;
                         lockmt1.Visible = lockmt2.Visible = lockmt3.Visible = lockmt4.Visible = false;
                         PicmtEX1.Enabled = PicmtEX2.Enabled = PicmtEX3.Enabled = PicmtCours4.Enabled = PicmtEX4.Enabled = PicmtCours1.Enabled = PicmtCours2.Enabled = PicmtCours3.Enabled = true;
 
@@ -236,7 +250,8 @@ namespace Start
                     }
                     else
                     {
-                        lock1.Visible = lock2.Visible = lock3.Visible = false; lvlFrancais.Image = Properties.Resources.crown3;
+                        lock1.Visible = lock2.Visible = lock3.Visible = false;
+                        if(lvlFrancais.Image == Properties.Resources.crown2) lvlFrancais.Image = Properties.Resources.crown3;
                         PicfrEX1.Enabled = PicfrEX2.Enabled = PicfrEX3.Enabled = PicfrCours1.Enabled = PicfrCours2.Enabled = PicfrCours3.Enabled = true;
                         
                         Variables.levelfr = 3;

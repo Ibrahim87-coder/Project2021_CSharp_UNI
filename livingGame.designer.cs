@@ -430,10 +430,10 @@ namespace Start
             // 
             this.life3.BackColor = System.Drawing.Color.Transparent;
             this.life3.Image = global::Start.Properties.Resources.LifeOn;
-            this.life3.Location = new System.Drawing.Point(382, 187);
+            this.life3.Location = new System.Drawing.Point(382, 157);
             this.life3.Margin = new System.Windows.Forms.Padding(2);
             this.life3.Name = "life3";
-            this.life3.Size = new System.Drawing.Size(34, 32);
+            this.life3.Size = new System.Drawing.Size(76, 62);
             this.life3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.life3.TabIndex = 18;
             this.life3.TabStop = false;
@@ -442,10 +442,10 @@ namespace Start
             // 
             this.life2.BackColor = System.Drawing.Color.Transparent;
             this.life2.Image = global::Start.Properties.Resources.LifeOn;
-            this.life2.Location = new System.Drawing.Point(344, 187);
+            this.life2.Location = new System.Drawing.Point(308, 157);
             this.life2.Margin = new System.Windows.Forms.Padding(2);
             this.life2.Name = "life2";
-            this.life2.Size = new System.Drawing.Size(34, 32);
+            this.life2.Size = new System.Drawing.Size(76, 62);
             this.life2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.life2.TabIndex = 17;
             this.life2.TabStop = false;
@@ -454,10 +454,10 @@ namespace Start
             // 
             this.life1.BackColor = System.Drawing.Color.Transparent;
             this.life1.Image = global::Start.Properties.Resources.LifeOn;
-            this.life1.Location = new System.Drawing.Point(306, 187);
+            this.life1.Location = new System.Drawing.Point(228, 157);
             this.life1.Margin = new System.Windows.Forms.Padding(2);
             this.life1.Name = "life1";
-            this.life1.Size = new System.Drawing.Size(34, 32);
+            this.life1.Size = new System.Drawing.Size(76, 62);
             this.life1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.life1.TabIndex = 16;
             this.life1.TabStop = false;
@@ -466,19 +466,19 @@ namespace Start
             // 
             this.button2.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(330, 450);
+            this.button2.Location = new System.Drawing.Point(290, 450);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 79);
+            this.button2.Size = new System.Drawing.Size(126, 79);
             this.button2.TabIndex = 19;
-            this.button2.Text = "Earse";
+            this.button2.Text = "Supprimer";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(285, 290);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";

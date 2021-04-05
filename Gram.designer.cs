@@ -176,9 +176,9 @@ namespace Start
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button11);
             this.panel2.Controls.Add(this.button15);
-            this.panel2.Location = new System.Drawing.Point(492, 59);
+            this.panel2.Location = new System.Drawing.Point(108, 96);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1196, 457);
+            this.panel2.Size = new System.Drawing.Size(1225, 457);
             this.panel2.TabIndex = 9;
             this.panel2.Visible = false;
             this.panel2.VisibleChanged += new System.EventHandler(this.panel2_VisibleChanged);
@@ -302,7 +302,7 @@ namespace Start
         #endregion
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private binding binding1;
+        
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;

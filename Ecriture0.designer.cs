@@ -192,15 +192,16 @@ namespace Start
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button6.FlatAppearance.BorderSize = 5;
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(1163, 662);
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(1059, 629);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 30);
+            this.button6.Size = new System.Drawing.Size(172, 56);
             this.button6.TabIndex = 3;
             this.button6.Text = "Confirmer";
             this.button6.UseVisualStyleBackColor = false;
@@ -247,15 +248,16 @@ namespace Start
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.BackColor = System.Drawing.Color.SpringGreen;
             this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button7.FlatAppearance.BorderSize = 5;
             this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(738, 418);
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(1059, 635);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(98, 30);
+            this.button7.Size = new System.Drawing.Size(173, 50);
             this.button7.TabIndex = 8;
             this.button7.Text = "Ressayer";
             this.button7.UseVisualStyleBackColor = false;
@@ -358,8 +360,8 @@ namespace Start
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1360, 727);
-            this.Controls.Add(this.button10);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox5);

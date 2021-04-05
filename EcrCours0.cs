@@ -53,7 +53,7 @@ namespace Start
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
         }
-        PictureBox p;Graphics g;
+        Graphics g;
         private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
           
@@ -70,14 +70,14 @@ namespace Start
                 }
                 }
         }
-        Bitmap bbb;
+     
         private void pictureBox1_Click(object sender, EventArgs e)
         {
              i--;coloring = false; if (i == 0) pictureBox1.Visible = false;else { pictureBox1.Visible = true;pictureBox2.Visible = true ; }
             label1.Text = "La lettre" + (char)(i + 65); 
        /*this.Invoke(new MethodInvoker =>Form1_Load)*/
         }
-        bool ok = true;
+       
         private void EcrCours_Load(object sender, EventArgs e)
         {
             g = TableLayoutPanel1.CreateGraphics();
@@ -91,7 +91,7 @@ namespace Start
 
             //pictureBox1.Enabled = false; pictureBox2.Enabled = false; this.Refresh(); 
             //if(pictureBox2.Enabled)
-            ok = false;
+         
             i++; coloring = false; g.Clear(Color.WhiteSmoke);
             if (i == 25){pictureBox2.Visible = false; label1.Visible = pictureBox1.Visible = pictureBox3.Visible = pictureBox2.Visible = false; label2.Visible = label4.Visible = button1.Visible = true; }
             else { pictureBox1.Visible = true; pictureBox2.Visible = true; }

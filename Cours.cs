@@ -125,7 +125,7 @@ namespace  Start
             }
            
         }
-        int ticks;
+        
        
         
 

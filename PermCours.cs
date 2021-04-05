@@ -16,8 +16,8 @@ namespace Start
     {
         List<string> imageName;
 
-        private int counter = 0;
-        private bool vraiounon = false;
+         int counter = 0;
+        bool vraiounon = false;
         public Périmetre()
         {
 

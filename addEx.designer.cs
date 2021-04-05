@@ -29,9 +29,9 @@ namespace  Start
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addEx));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Question = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,66 +53,66 @@ namespace  Start
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CroissantEtDecroissant = new System.Windows.Forms.RadioButton();
             this.Clock = new System.Windows.Forms.RadioButton();
-            this.FormesGeometriques = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.planetes = new System.Windows.Forms.RadioButton();
+            this.livingorno = new System.Windows.Forms.RadioButton();
+            this.sens = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Orthographe = new System.Windows.Forms.RadioButton();
             this.Grammaire2 = new System.Windows.Forms.RadioButton();
             this.Grammaire1 = new System.Windows.Forms.RadioButton();
             this.Conjugaison2 = new System.Windows.Forms.RadioButton();
             this.Conjugaison1 = new System.Windows.Forms.RadioButton();
+            this.FormesGeometriques = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.planetes = new System.Windows.Forms.RadioButton();
-            this.livingorno = new System.Windows.Forms.RadioButton();
-            this.sens = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Question,
             this.ChoiCorrect,
             this.Truc1,
             this.Truc2});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Menu;
             this.dataGridView1.Location = new System.Drawing.Point(223, 115);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(907, 182);
@@ -152,7 +152,7 @@ namespace  Start
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
@@ -309,10 +309,9 @@ namespace  Start
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.groupBox2.Controls.Add(this.CroissantEtDecroissant);
             this.groupBox2.Controls.Add(this.Clock);
-            this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.FormesGeometriques);
             this.groupBox2.Controls.Add(this.Priorite);
             this.groupBox2.Controls.Add(this.Perimetre);
@@ -322,7 +321,7 @@ namespace  Start
             this.groupBox2.Controls.Add(this.Suitesdenombres);
             this.groupBox2.Controls.Add(this.Additionetsoustraction);
             this.groupBox2.Controls.Add(this.Nombres);
-            this.groupBox2.Location = new System.Drawing.Point(536, 330);
+            this.groupBox2.Location = new System.Drawing.Point(582, 316);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(265, 364);
             this.groupBox2.TabIndex = 2;
@@ -358,29 +357,66 @@ namespace  Start
             this.Clock.Text = "Clock";
             this.Clock.UseVisualStyleBackColor = true;
             // 
-            // FormesGeometriques
+            // groupBox4
             // 
-            this.FormesGeometriques.AutoSize = true;
-            this.FormesGeometriques.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormesGeometriques.Location = new System.Drawing.Point(6, 271);
-            this.FormesGeometriques.Name = "FormesGeometriques";
-            this.FormesGeometriques.Size = new System.Drawing.Size(200, 24);
-            this.FormesGeometriques.TabIndex = 9;
-            this.FormesGeometriques.TabStop = true;
-            this.FormesGeometriques.Tag = "14";
-            this.FormesGeometriques.Text = "Formes Geometriques";
-            this.FormesGeometriques.UseVisualStyleBackColor = true;
-            this.FormesGeometriques.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
+            this.groupBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.groupBox4.Controls.Add(this.planetes);
+            this.groupBox4.Controls.Add(this.livingorno);
+            this.groupBox4.Controls.Add(this.sens);
+            this.groupBox4.Location = new System.Drawing.Point(492, 357);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(248, 205);
+            this.groupBox4.TabIndex = 22;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Lecon";
+            // 
+            // planetes
+            // 
+            this.planetes.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.planetes.Location = new System.Drawing.Point(6, 133);
+            this.planetes.Name = "planetes";
+            this.planetes.Size = new System.Drawing.Size(183, 58);
+            this.planetes.TabIndex = 2;
+            this.planetes.TabStop = true;
+            this.planetes.Tag = "18";
+            this.planetes.Text = "Les planetes";
+            this.planetes.UseVisualStyleBackColor = true;
+            // 
+            // livingorno
+            // 
+            this.livingorno.AutoSize = true;
+            this.livingorno.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.livingorno.Location = new System.Drawing.Point(10, 87);
+            this.livingorno.Name = "livingorno";
+            this.livingorno.Size = new System.Drawing.Size(239, 24);
+            this.livingorno.TabIndex = 1;
+            this.livingorno.TabStop = true;
+            this.livingorno.Tag = "17";
+            this.livingorno.Text = "Etre_vivants ou non vivants";
+            this.livingorno.UseVisualStyleBackColor = true;
+            // 
+            // sens
+            // 
+            this.sens.AutoSize = true;
+            this.sens.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sens.Location = new System.Drawing.Point(10, 27);
+            this.sens.Name = "sens";
+            this.sens.Size = new System.Drawing.Size(145, 24);
+            this.sens.TabIndex = 0;
+            this.sens.TabStop = true;
+            this.sens.Tag = "16";
+            this.sens.Text = "Les sensations";
+            this.sens.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.Info;
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.groupBox3.Controls.Add(this.Orthographe);
             this.groupBox3.Controls.Add(this.Grammaire2);
             this.groupBox3.Controls.Add(this.Grammaire1);
             this.groupBox3.Controls.Add(this.Conjugaison2);
             this.groupBox3.Controls.Add(this.Conjugaison1);
-            this.groupBox3.Location = new System.Drawing.Point(0, 0);
+            this.groupBox3.Location = new System.Drawing.Point(530, 330);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(218, 329);
             this.groupBox3.TabIndex = 21;
@@ -453,6 +489,20 @@ namespace  Start
             this.Conjugaison1.Text = "Conjugaison1";
             this.Conjugaison1.UseVisualStyleBackColor = true;
             // 
+            // FormesGeometriques
+            // 
+            this.FormesGeometriques.AutoSize = true;
+            this.FormesGeometriques.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormesGeometriques.Location = new System.Drawing.Point(6, 271);
+            this.FormesGeometriques.Name = "FormesGeometriques";
+            this.FormesGeometriques.Size = new System.Drawing.Size(200, 24);
+            this.FormesGeometriques.TabIndex = 9;
+            this.FormesGeometriques.TabStop = true;
+            this.FormesGeometriques.Tag = "14";
+            this.FormesGeometriques.Text = "Formes Geometriques";
+            this.FormesGeometriques.UseVisualStyleBackColor = true;
+            this.FormesGeometriques.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -466,9 +516,9 @@ namespace  Start
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Info;
+            this.button2.BackColor = System.Drawing.Color.Aquamarine;
             this.button2.Font = new System.Drawing.Font("Leelawadee UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(844, 584);
+            this.button2.Location = new System.Drawing.Point(892, 593);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(166, 56);
             this.button2.TabIndex = 7;
@@ -478,9 +528,9 @@ namespace  Start
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Info;
+            this.button1.BackColor = System.Drawing.Color.Aquamarine;
             this.button1.Font = new System.Drawing.Font("Leelawadee UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(870, 415);
+            this.button1.Location = new System.Drawing.Point(892, 351);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 56);
             this.button1.TabIndex = 8;
@@ -488,58 +538,6 @@ namespace  Start
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.Info;
-            this.groupBox4.Controls.Add(this.planetes);
-            this.groupBox4.Controls.Add(this.livingorno);
-            this.groupBox4.Controls.Add(this.sens);
-            this.groupBox4.Controls.Add(this.groupBox3);
-            this.groupBox4.Location = new System.Drawing.Point(0, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(271, 197);
-            this.groupBox4.TabIndex = 22;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Lecon";
-            // 
-            // planetes
-            // 
-            this.planetes.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.planetes.Location = new System.Drawing.Point(6, 133);
-            this.planetes.Name = "planetes";
-            this.planetes.Size = new System.Drawing.Size(183, 58);
-            this.planetes.TabIndex = 2;
-            this.planetes.TabStop = true;
-            this.planetes.Tag = "18";
-            this.planetes.Text = "Les planetes";
-            this.planetes.UseVisualStyleBackColor = true;
-            // 
-            // livingorno
-            // 
-            this.livingorno.AutoSize = true;
-            this.livingorno.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.livingorno.Location = new System.Drawing.Point(10, 87);
-            this.livingorno.Name = "livingorno";
-            this.livingorno.Size = new System.Drawing.Size(239, 24);
-            this.livingorno.TabIndex = 1;
-            this.livingorno.TabStop = true;
-            this.livingorno.Tag = "17";
-            this.livingorno.Text = "Etre_vivants ou non vivants";
-            this.livingorno.UseVisualStyleBackColor = true;
-            // 
-            // sens
-            // 
-            this.sens.AutoSize = true;
-            this.sens.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sens.Location = new System.Drawing.Point(10, 27);
-            this.sens.Name = "sens";
-            this.sens.Size = new System.Drawing.Size(145, 24);
-            this.sens.TabIndex = 0;
-            this.sens.TabStop = true;
-            this.sens.Tag = "16";
-            this.sens.Text = "Les sensations";
-            this.sens.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -580,7 +578,9 @@ namespace  Start
             this.ClientSize = new System.Drawing.Size(1360, 727);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
@@ -596,10 +596,10 @@ namespace  Start
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

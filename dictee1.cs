@@ -31,10 +31,10 @@ namespace Start
             if (first[2]) { vn.URL = @"Voix/Dic" + (Dictée.t[2] + 1).ToString() + ".m4a"; first[2] = false; }
             vn.Ctlcontrols.play(); pictureBox6.SendToBack();
         }
-        jeux_de_heure d;
+        
         private void dictee1_Load(object sender, EventArgs e)
         {
-           // label3.Text = DateTime.Now.Date.ToString();
+            label3.Text = Variables.UserNom;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -81,8 +81,11 @@ namespace Start
 
         public void texts()
         {
-            text1 = textBox1.Text.TrimEnd(' '); text2 = textBox2.Text.TrimEnd(' '); text3 = textBox3.Text.TrimEnd(' ');
-            text4 = textBox4.Text.TrimEnd(' '); text5 = textBox5.Text.TrimEnd(' ');
+            text1 = textBox1.Text.TrimEnd(' ');
+            text2 = textBox2.Text.TrimEnd(' ');
+            text3 = textBox3.Text.TrimEnd(' ');
+            text4 = textBox4.Text.TrimEnd(' '); 
+            text5 = textBox5.Text.TrimEnd(' ');
 
         }
         public string[] Texte
